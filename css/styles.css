@@ -41,6 +41,13 @@ ul {
   letter-spacing: 0.03em;
   line-height: 1.17;
   text-transform: uppercase;
+  margin-right: 76px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav__logo-accent {
@@ -53,6 +60,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -108,9 +116,12 @@ ul {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 48px;
+  max-width: 496px;
 }
 
 .hero__button {
+  display: block;
+  min-width: 169px;
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -124,9 +135,24 @@ ul {
   padding: 16px 32px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .hero__button:hover,
 .hero__button:focus {
   background-color: #404BBF;
+}
+
+.section-title {
+  margin-bottom: 72px;
 }
 
 .features__list {
@@ -154,6 +180,10 @@ ul {
   color: #434455;
 }
 
+img {
+  display: block;
+}
+
 .team {
   background-color: #F4F4FD;
 }
@@ -170,18 +200,25 @@ ul {
   flex-basis: calc((100% - 72px) / 4);
   text-align: center;
   padding: 32px 0;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card {
+  padding: 32px 0;
 }
 
 .team__name {
+  text-align: center;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
 }
 
 .team__role {
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
